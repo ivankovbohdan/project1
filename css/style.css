@@ -191,7 +191,7 @@ ul {
 }
 
 .footer::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -256,6 +256,18 @@ ul {
 
 /* #region MEDIA */
 @media (max-width: 920px) {
+  .page {
+    font-size: 24px;
+  }
+  .logo:hover {
+    transform: none;
+  }
+  .socials__link:hover {
+    transform: none;
+  }
+  .phones__link:hover {
+    transform: none;
+  }
   .header__socials {
     margin-right: 0;
   }
@@ -280,6 +292,21 @@ ul {
     gap: 50px;
   }
 
+  .hero__countries-item {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero__countries-img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero__img {
+    width: 304px;
+    height: 215px;
+  }
+
   .footer {
     padding: 150px 0;
   }
@@ -293,6 +320,11 @@ ul {
     padding: 65px 0 0;
     position: relative;
   }
+
+  .footer__link:hover {
+    transform: none;
+  }
+
   .footer__link::before {
     top: 0;
     left: 50%;
@@ -302,11 +334,7 @@ ul {
 
 @media (max-width: 744px) {
   .page {
-    font-size: 24px;
-  }
-  .hero__img {
-    width: 335px;
-    height: 315px;
+    font-size: 20px;
   }
 
   .menu::after {
@@ -350,24 +378,27 @@ ul {
   }
   .logo img {
     display: block;
-    width: 95px;
+    width: 130px;
     height: 97px;
   }
   .socials__link {
     width: 36px;
     height: 36px;
     background-size: contain;
-}
+  }
+  .socials {
+    gap: 16px;
+  }
   .hero {
     text-align: left;
   }
-  .hero__container{
+  .hero__container {
     align-items: flex-start;
   }
   .hero__title {
     font-size: 34px;
     line-height: 36px;
-    margin-bottom:25px;
+    margin-bottom: 25px;
   }
   .hero__phones {
     flex-direction: column;
@@ -388,8 +419,7 @@ ul {
     height: 22px;
   }
   .hero__img {
-    width: 235px;
-    height: 215px;
+    width: 204px;
     margin: 0 auto;
   }
   .menu::after {
